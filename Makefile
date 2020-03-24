@@ -1,13 +1,13 @@
 PNG_NAME        := libpng-1.6.34
-JPEG_SRC_NAME   := jpegsrc.v9a# filename at the server
-JPEG_DIR_NAME   := jpeg-9a# folder name after the JPEG_SRC_NAME archive has been unpacked
-TIFF_NAME       := tiff-4.0.9
+JPEG_SRC_NAME   := jpegsrc.v9d# filename at the server
+JPEG_DIR_NAME   := jpeg-9d# folder name after the JPEG_SRC_NAME archive has been unpacked
+TIFF_NAME       := tiff-4.1.0
 
 SDK_IPHONEOS_PATH=$(shell xcrun --sdk iphoneos --show-sdk-path)
 SDK_IPHONESIMULATOR_PATH=$(shell xcrun --sdk iphonesimulator --show-sdk-path)
 XCODE_DEVELOPER_PATH="`xcode-select -p`"
 XCODETOOLCHAIN_PATH=$(XCODE_DEVELOPER_PATH)/Toolchains/XcodeDefault.xctoolchain
-IOS_DEPLOY_TGT="7.0"
+IOS_DEPLOY_TGT="8.0"
 
 IMAGE_SRC = $(shell pwd)
 PNG_SRC   = $(IMAGE_SRC)/$(PNG_NAME)
